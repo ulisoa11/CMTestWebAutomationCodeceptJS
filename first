@@ -1,0 +1,17 @@
+ I.amOnPage('https://www.claromusica.com/landing');
+    I.click('Aceptar todas');
+    I.wait(2)
+    I.click('Escucha gratis')
+    I.wait(3)
+    I.click("img[src='/dist/imagenes/email-login.svg']")
+    I.wait(2)
+    I.fillField('Tu correo', 'ulisoa11@gmail.com');
+    I.wait(2)
+    I.click('Continuar')
+    I.wait(2)
+    I.fillField('password','ClaroMusica1')
+    I.click('Continuar')
+    I.wait(3)
+    I.click('Entendido')
+    I.scrollPageToBottom();
+    pause();
